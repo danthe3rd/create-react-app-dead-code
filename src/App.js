@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  if (process.env.IS_PUBLIC === "0") {
+    console.log("Some internal code");
+  }
+
   return (
     <div className="App">
       <header className="App-header">
